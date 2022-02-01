@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util. Scanner;
+
+public class PR1 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("P\t" + "Q\t" + "AND\t" + "OR\t" + "XOR\t" + "NOT");
+        int num = 0;
+        int num2 = 0;
+        int num3 = 0;
+        int num4 = 1;
+        int num5 = 1;
+        int num6 = 0;
+        int num7 = 1;
+        int num8 = 1;
+        if(num2 > 1 || num > 1 ) {
+            System.out.println("Ошибка!Введены неправильный значения!");
+            return;
+        }
+        System.out.println(num + "\t" + num2 + "\t" + (num & num2) + "\t" + (num | num2) + "\t" + (num ^ num2) + "\t");
+        System.out.println(num3 + "\t" + num4 + "\t" + (num3 & num4) + "\t" + (num3 | num4) + "\t" + (num3 ^ num4) + "\t");
+        System.out.println(num5 + "\t" + num6 + "\t" + (num5 & num6) + "\t" + (num5 | num6) + "\t" + (num5 ^ num6) + "\t");
+        System.out.println(num7 + "\t" + num8 + "\t" + (num7 & num8) + "\t" + (num7 | num8) + "\t" + (num7 ^ num8) + "\t");
+    }
+}
