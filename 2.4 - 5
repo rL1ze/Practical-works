@@ -1,0 +1,25 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+	    Scanner in = new Scanner(System.in);
+
+        String res, between;
+        Integer res2;
+        System.out.println("Вводим число:");
+        Integer n = in.nextInt();
+
+        res = Integer.toHexString(n);
+
+        between = Integer.toString(n);
+
+        res2 = Integer.decode(between);
+
+        System.out.println("Кодируем в 16-ную систему счисления:\n" + res);
+        System.out.println("Декодируем из 16-ной системы счисления в 10-ную:\n" + res2);
+    }
+}
