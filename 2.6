@@ -1,0 +1,32 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+	    Scanner in = new Scanner(System.in);
+
+        Integer n = in.nextInt();
+        int num1, num2;
+
+        if(n < 100){
+
+            num1 = n.toString().codePointAt(0);
+            num2 = n.toString().codePointAt(1);
+
+            if(num1 > num2){
+                System.out.println(num1);
+            }
+            else{
+                System.out.println(num2);
+            }
+        }
+        else{
+            System.out.print("Вы ввели не двухзначное число!");
+        }
+
+
+    }
+}
