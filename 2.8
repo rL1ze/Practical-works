@@ -24,3 +24,31 @@ public class Main {
 
     }
 }
+/* Вторая вариация это го же когда,здесь мы просто пропускаем значения и ставим вместо них "Пройдено" */
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int Point = 0;
+
+        System.out.print("Старт: ");
+        for(int i = 0; i <= 99; i++){
+            System.out.print(" ");
+            if(i % 10 == 0  && i != 0){
+                System.out.print(" Пройдено ");
+                Point++;
+                continue;
+            }
+            System.out.print(i);
+        }
+        System.out.println(" Финиш.");
+        System.out.println("Количество пройденных контрольных точек: " + Point);
+
+
+    }
+}
